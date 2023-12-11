@@ -1,4 +1,4 @@
-import readline from 'readline';
+import * as readline from 'readline';
 
 // Create readline interface
 const rl = readline.createInterface({
