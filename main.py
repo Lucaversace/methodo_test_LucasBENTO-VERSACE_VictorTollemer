@@ -1,26 +1,12 @@
-from languefrancaise import LangueFrancaise
-from langueanglaise import LangueAnglaise
-from momentdelajournee import MomentDeLaJournee
-from verificateur_palindrome import VerificateurPalindrome
+from francais import Francais
+from anglais import Anglais
+from ohce import Echo
+from momentDeLaJournee import TempsJournee
 
-def main():
-    langue = LangueFrancaise()  # ou LangueAnglaise()
-    moment = MomentDeLaJournee.obtenir_moment()
+class SystemLangAdapter:
+    def __init__(self):
+        self.langue = Anglais()
 
-    print(langue.saluer(moment))
+if __name__ == '__main__':
+    ohce = Echo(SystemLangAdapter().langue, TempsJournee.MATIN)
 
-    try:
-        while True:
-            texte = input("Entrez un texte (ou 'quitter' pour arrêter) : ")
-            if texte.lower() == 'quitter':
-                print(langue.acquitter(moment))
-                break
-
-            print(f"Écho : {texte[::-1]}")
-            if VerificateurPalindrome.est_palindrome(texte.replace(" ", "").lower()):
-                print(langue.feliciter())
-    except KeyboardInterrupt:
-        print(langue.acquitter(moment))
-
-if __name__ == "__main__":
-    main()
