@@ -1,6 +1,6 @@
 import unittest
-from francais import Francais
-from momentDeLaJournee import TempsJournee
+from src.francais import Francais
+from src.momentDeLaJournee import TempsJournee
 
 class TestFrancais(unittest.TestCase):
 

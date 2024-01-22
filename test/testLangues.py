@@ -1,7 +1,7 @@
 import unittest
-from francais import Francais
-from anglais import Anglais
-from langues import InterfaceLangue
+from src.francais import Francais
+from src.anglais import Anglais
+from src.langues import InterfaceLangue
 
 class TestLangues(unittest.TestCase):
 

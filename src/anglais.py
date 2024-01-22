@@ -1,6 +1,6 @@
-from expressions import Salutations
-from momentDeLaJournee import TempsJournee
-from langues import InterfaceLangue
+from .expressions import Salutations
+from .momentDeLaJournee import TempsJournee
+from .langues import InterfaceLangue
 
 class Anglais(InterfaceLangue):
 

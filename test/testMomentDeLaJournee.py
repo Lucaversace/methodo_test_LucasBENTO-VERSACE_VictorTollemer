@@ -1,5 +1,5 @@
 import unittest
-from momentDeLaJournee import TempsJournee
+from src.momentDeLaJournee import TempsJournee
 
 class TestTempsJournee(unittest.TestCase):
 

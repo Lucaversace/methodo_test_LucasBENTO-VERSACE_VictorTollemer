@@ -1,7 +1,7 @@
 import unittest
-from verifPalindrome import VerificateurPalindrome
-from francais import Francais
-from momentDeLaJournee import TempsJournee
+from src.verifPalindrome import VerificateurPalindrome
+from src.francais import Francais
+from src.momentDeLaJournee import TempsJournee
 
 class TestVerificateurPalindrome(unittest.TestCase):
 
